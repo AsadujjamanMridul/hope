@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_03"
+    android:backgroundTint="#ef9a9a"
+    android:backgroundTintMode="screen"
+    android:scaleType="fitXY"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_edittext_background"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group:          "
+            android:textColor="#bdbdbd"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-condensed-medium" />
+
+        <RadioGroup
+            android:id="@+id/searchLayoutBloodGroupRadioGroupId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/sl-A-postive-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  A+"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/sl-A-negative-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  A-"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/sl-AB-positive-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  AB+"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/sl-AB-negative-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  AB-"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/sl-B-positive-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  B+"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/sl-B-negative-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  B-"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/sl-O-positive-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  O+"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/sl-O-negative-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  O-"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/cityTextViewId"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_edittext_background"
+        android:hint="Select a city"
+        android:textAlignment="center"
+        android:textColorHint="#bdbdbd"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:dropDownSelector="#f9fbe7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/searchLayoutSearchButtonId"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_login_button"
+        android:text="@string/search_donor"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityTextViewId"/>
+
+    <Button
+        android:id="@+id/searchLayoutHomeButtonId"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_gradient_button"
+        android:text="@string/home"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchLayoutSearchButtonId"
+        app:layout_constraintVertical_bias="0.396" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

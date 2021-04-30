@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Hello, there!"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+
+    <TextView
+        android:id="@+id/nameTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fff"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_edittext_background"
+        android:padding="7dp"
+        android:text="Info"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <LinearLayout
+        android:id="@+id/infoTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/custom_edittext_background">
+
+
+
+        <TextView
+
+            android:layout_marginTop="18dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:id="@+id/genderTextViewId"
+            android:text="Gender : Male"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            android:id="@+id/ageTextViewId"
+            android:text="Age : 25 years"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            android:id="@+id/cityTextViewId"
+            android:text="City : Dhaka"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            android:id="@+id/bloodGroupTextViewId"
+            android:text="Blood Group : A+"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/abilityTextViewId"
+            android:text="Donation Status : Can donate"
+            />
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:id="@+id/mobileTextViewId"
+            android:text="Mobile: 01910070303"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/updateButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="15dp"
+            android:paddingTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            android:background="@drawable/custom_login_button"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:elevation="20dp"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_03"
+    android:backgroundTint="#ef9a9a"
+    android:backgroundTintMode="screen"
+    android:scaleType="fitXY"
+    tools:context=".RegisterActivity">
+
+    <!--<ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="100dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/name"
+            android:autofillHints="@string/name"
+            />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/male"
+                    android:textCursorDrawable="@null" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:layout_marginRight="20dp"
+                    android:textCursorDrawable="@null" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="92dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/age"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/scrollView2"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+                app:layout_constraintVertical_bias="0.017" />
+        </LinearLayout>
+
+    </ScrollView>-->
+
+
+    <EditText
+        android:id="@+id/registrationNameId"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_edittext_background"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColorHint="#bdbdbd"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationNameId">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="250dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_edittext_background"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityTextViewId">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group:          "
+            android:textColor="#bdbdbd"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-condensed-medium"/>
+
+        <RadioGroup
+            android:id="@+id/bgRadioGroupId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/A-postive-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  A+"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/A-negative-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  A-"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/AB-positive-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  AB+"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/AB-negative-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  AB-"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/B-positive-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  B+"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/B-negative-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  B-"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/O-positive-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  O+"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+            <RadioButton
+                android:id="@+id/O-negative-Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="5dp"
+                android:text="  O-"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/cityTextViewId"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_edittext_background"
+        android:hint="Select a city"
+        android:textAlignment="center"
+        android:textColorHint="#bdbdbd"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:dropDownSelector="#f9fbe7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationAgeId" />
+
+    <Spinner
+        android:id="@+id/abilitySpinner"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_edittext_background"
+        android:dropDownWidth="match_parent"
+        android:dropDownSelector="#f9fbe7"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <EditText
+        android:id="@+id/registrationMobileId"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_edittext_background"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="@string/mobile_mumber"
+        android:inputType="number|phone"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColorHint="#bdbdbd"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abilitySpinner" />
+
+    <Button
+        android:id="@+id/registrationButtonId"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_login_button"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationMobileId"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroupId"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_edittext_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        tools:ignore="OnClick">
+
+
+        <RadioButton
+            android:id="@+id/registrationMaleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="45dp"
+            android:button="@drawable/custom_radio_button"
+            android:text="@string/male"
+            android:textColor="#bdbdbd"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-condensed-medium"/>
+
+        <RadioButton
+            android:id="@+id/registrationFemaleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/custom_radio_button"
+            android:text="@string/female"
+            android:textColor="#bdbdbd"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-condensed-medium"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/registrationAgeId"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_edittext_background"
+        android:ems="10"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColorHint="#bdbdbd"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderRadioGroupId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

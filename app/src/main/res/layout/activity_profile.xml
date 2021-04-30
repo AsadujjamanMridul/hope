@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_03"
+    android:backgroundTint="#ef9a9a"
+    android:backgroundTintMode="screen"
+    android:scaleType="fitXY"
+    android:gravity="center_horizontal"
+    tools:context=".ProfileActivity">
+
+
+    <ListView
+        android:id="@+id/listViewId"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:fontFamily="sans-serif-condensed-medium" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/updateButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/custom_login_button"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:elevation="20dp"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium" />
+
+
+</LinearLayout>

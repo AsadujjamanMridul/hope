@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:id="@+id/nameTextViewId"
+        android:text="Name : Anisul Islam"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:id="@+id/genderTextViewId"
+        android:text="Gender : Male"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:id="@+id/ageTextViewId"
+        android:text="Age : 25 years"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:id="@+id/bloodGroupTextViewId"
+        android:text="Blood Group : A+"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:id="@+id/mobileTextViewId"
+        android:text="Mobile: 01910070303"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/callNowButtonId"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Call Now"
+        android:textAllCaps="false"
+        android:elevation="20dp"
+        android:textColor="#ff9e80"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:background="@drawable/custom_stroke_button"  />
+
+</LinearLayout>
